@@ -1,0 +1,139 @@
+@import 'node_modules/font-awesome/scss/font-awesome';
+
+$bg-color: #07b1c8;
+$font-color: #fff9e9;
+$primary-color: #f05b19;
+$overlay: rgba(0,0,0,0.6);
+$icon-size: 30px;
+$secondary: #d1fdf0;
+$black: #2c363c;
+
+body {
+  background: $bg-color;
+  color: $font-color;
+  font-family: 'Source Sans Pro', sans-serif;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.bg-primary {
+  background: $primary-color !important;
+}
+
+.text-muted {
+  color: $black !important;
+}
+
+.btn-outline-secondary {
+  color: $secondary;
+  border-color: $secondary;
+
+  &:hover {
+    color: $black;
+    background-color: $secondary;
+    border-color: $secondary;
+  }
+}
+
+.btn-outline-light:hover {
+  color: $primary-color;
+  background-color: $font-color;
+  border-color: $secondary;
+}
+
+.navbar {
+  border-bottom: 3px $primary-color solid;
+  opacity: 0.8;
+}
+
+.fa {
+  padding: 4px;
+  border-radius: 5px;
+  font-size: $icon-size;
+}
+
+#header {
+  background: url('./../img/bg.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+
+  .dark-overlay {
+    background-color: $overlay;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .home-inner {
+    padding-top: 150px;
+  }
+
+  .card-form {
+    opacity: 0.8;
+  }
+
+  .fa {
+    color: $primary-color;
+    background: $font-color;
+  }
+}
+
+#taskCarousel {
+  width: 100%;
+}
+
+@media only screen and (min-width: 1440px){
+  #home-section {
+    height: 70vh;
+
+    .dark-overlay {
+      height: 70vh;
+    }
+  }
+}
+
+@media only screen and (min-width: 2560px){
+  #home-section {
+    height: 50vh;
+
+    .dark-overlay {
+      height: 50vh;
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .typer1 {
+    font-size: 3rem;
+  }
+  .typed-cursor {
+    font-size: 3rem;
+  }
+}
+
+#cli-weather-section {
+  .fa {
+    color: $font-color;
+    background: $bg-color;
+  }
+}
+
+#task-ninja-section {
+  .fa {
+    color: $primary-color;
+    background: $font-color;
+  }
+}
+
+#brunch-skeleton-section {
+  .fa {
+    color: $primary-color;
+    background: $font-color;
+  }
+}
